@@ -1,0 +1,29 @@
+@layer base {
+  input[type='text'],
+  input[type='email'],
+  input[type='number'],
+  input[type='password'],
+  textarea,
+  select,
+  .stripe-input {
+    @apply py-3 px-4 w-full border-gray-400 rounded-lg text-sm focus:border-gray-secondary focus:ring-gray-secondary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 #{!important};
+  }
+
+  input[type='checkbox'] {
+    @apply w-auto shrink-0 mt-0.5 border-gray-400 p-3 rounded text-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800 #{!important};
+  }
+
+  input[type='radio'] {
+    @apply w-auto shrink-0 mt-0.5 border-gray-400 p-2 rounded-xl text-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800 #{!important};
+  }
+}
+
+.dialog-module {
+  @apply overflow-auto max-w-full max-h-full #{!important};
+}
+
+.stripe-input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px; /* optional, um einen Abstand zu schaffen */
+}

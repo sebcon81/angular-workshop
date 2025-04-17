@@ -1,0 +1,5 @@
+@layer components {
+  .image-clickable {
+    @apply cursor-pointer border border-gray-200 dark:border-gray-700;
+  }
+}

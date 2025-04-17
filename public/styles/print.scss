@@ -1,0 +1,12 @@
+@media print {
+  app-header,
+  app-footer,
+  app-back-to-top-button,
+  app-toast,
+  app-tabs,
+  app-breadcrumb,
+  .not-print,
+  .button-bar {
+    display: none;
+  }
+}

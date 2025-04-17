@@ -1,0 +1,28 @@
+@layer components {
+  .toast-container {
+    &.toast-bottom-right {
+      @apply right-2 left-2 md:right-4 md:left-auto #{!important};
+    }
+    .ngx-toastr {
+      @apply shadow-none rounded-xl w-full md:w-96 #{!important};
+
+      .toast {
+        @apply bg-gray-100 text-gray-800 #{!important};
+      }
+
+      /* Anpassen des Aussehens nur für Toastr-Benachrichtigungen mit der Klasse 'toast-success' */
+      &.toast-success {
+        @apply bg-primary text-white #{!important};
+      }
+
+      &.toast-error {
+        @apply bg-red-primary text-white #{!important};
+      }
+
+      /* Ändern der Schriftart und des Abstandes im Toast */
+      .toast-message {
+        @apply text-sm;
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@layer components {
+  .btn-primary {
+    @apply flex items-center justify-center;
+    @apply px-4 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary-hover dark:bg-primary-dark dark:hover:bg-primary dark:text-white dark:hover:shadow-lg;
+
+    &.disabled,
+    &[disabled] {
+      @apply bg-gray-200 text-gray-secondary cursor-not-allowed hover:text-gray-secondary;
+    }
+
+    &.inverted {
+      @apply border-primary border-2 border-solid bg-white text-primary hover:border-primary-hover dark:bg-primary-dark dark:hover:bg-primary-hover dark:text-white dark:shadow-md dark:hover:shadow-lg;
+    }
+
+    &.small {
+      @apply px-2 py-1 text-sm;
+    }
+  }
+
+  a.btn-primary {
+    @apply hover:text-white;
+  }
+
+  .btn-secondary {
+    @apply flex items-center justify-center;
+    @apply px-4 py-2 border-gray-200 border-2 border-solid bg-white text-gray-secondary font-semibold rounded-lg shadow-sm active:bg-white hover:border-primary-hover hover:bg-gray-100 hover:text-primary dark:bg-primary-dark dark:hover:bg-primary-dark dark:text-white dark:shadow-md dark:hover:shadow-lg;
+
+    &.disabled,
+    &[disabled] {
+      @apply cursor-not-allowed border-gray-100 bg-gray-100 text-gray-tertiary hover:text-gray-secondary hover:border-gray-200 hover:bg-white;
+    }
+
+    &.small {
+      @apply px-2 py-1 text-sm;
+    }
+  }
+
+  .btn-danger {
+    @apply flex items-center justify-center;
+    @apply px-4 py-2 border-red-secondary border-2 border-solid bg-red-primary text-white font-semibold rounded-lg shadow-sm active:bg-white hover:border-primary-hover hover:bg-gray-100 hover:text-primary dark:bg-primary-dark dark:hover:bg-primary-dark dark:text-white dark:shadow-md dark:hover:shadow-lg;
+
+    &.disabled,
+    &[disabled] {
+      @apply cursor-not-allowed hover:text-gray-secondary hover:border-gray-200 hover:bg-white;
+    }
+  }
+
+  .btn-inverted {
+    @apply flex items-center justify-center;
+    @apply px-4 py-2 border-primary border-2 border-solid bg-white text-primary font-semibold rounded-lg shadow-sm hover:border-primary-hover dark:bg-primary-dark dark:hover:bg-primary-hover dark:text-white dark:shadow-md dark:hover:shadow-lg;
+  }
+
+  .btn-link-inverted {
+    @apply flex items-center justify-center;
+    @apply px-4 py-2 text-white font-semibold hover:text-primary-dark;
+  }
+
+  .btn-link {
+    @apply flex items-center justify-center;
+    @apply px-4 py-2 text-primary font-semibold hover:text-primary-dark;
+  }
+
+  .btn-link--danger {
+    line-height: 44px;
+    height: 44px;
+    @apply flex items-center justify-center;
+    @apply text-red-primary font-semibold hover:text-primary-dark;
+  }
+
+  a,
+  .link {
+    @apply text-primary text-link hover:text-primary-dark font-semibold cursor-pointer;
+  }
+
+  a.link-inverted {
+    @apply text-white underline cursor-pointer;
+  }
+
+  a.text-link {
+    @apply text-gray-600 font-normal underline hover:text-gray-900 dark:text-gray-200 dark:hover:text-gray-300;
+  }
+
+  a.login,
+  button.login {
+    line-height: 38px;
+    @apply flex items-center justify-center gap-2;
+    @apply px-4 bg-white text-gray-600 rounded-lg border border-primary dark:bg-primary-dark dark:hover:bg-primary dark:text-white dark:hover:shadow-lg;
+  }
+
+  footer {
+    a {
+      @apply font-normal inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200;
+    }
+  }
+
+  nav {
+    a {
+      @apply font-semibold text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-secondary dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600;
+    }
+  }
+
+  .button-group {
+    @apply grid grid-cols-1 w-full gap-2 sm:flex;
+  }
+}

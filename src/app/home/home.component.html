@@ -1,0 +1,11 @@
+<app-blog-list [blogEntryItem]="myBlogItem"></app-blog-list>
+<button
+	(click)="displayBlogForm = !displayBlogForm"
+	class="bg-blue-500 text-white p-2 rounded-md"
+>
+	Zeige mich an
+</button>
+<app-blog-form
+	*ngIf="displayBlogForm"
+	(newBlogEntry)="addNewEntry($event)"
+></app-blog-form>

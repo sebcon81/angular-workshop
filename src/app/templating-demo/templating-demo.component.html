@@ -1,0 +1,8 @@
+<p>Vorname: {{ selectedPerson.firstName }}</p>
+<p>Nachname: {{ selectedPerson.lastName }}</p>
+<p>counter: {{ counter }}</p>
+<div class="flex gap-8">
+	<button (click)="incrementCounter()" type="button">Increment</button>
+	<button (click)="decrementCounter()">Decrement</button>
+	<button (click)="resetCounter()">Reset</button>
+</div>

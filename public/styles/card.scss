@@ -1,0 +1,9 @@
+@layer components {
+  .card {
+    @apply flex flex-col grow bg-white md:border md:shadow-sm md:rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7];
+  }
+
+  .card-border {
+    @apply grow bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7];
+  }
+}

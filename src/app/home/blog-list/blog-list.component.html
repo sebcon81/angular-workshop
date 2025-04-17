@@ -1,0 +1,9 @@
+<div class="grid gap-8 bg-gray-100">
+	<h2>Mein erster Blog</h2>
+	<p>Lorum ipsum</p>
+	<hr />
+	<app-blog-entry
+		*ngFor="let blogItem of blogEntryItem; trackBy: trackByBlogEntryID"
+		[item]="blogItem"
+	></app-blog-entry>
+</div>

@@ -1,0 +1,17 @@
+<!-- login.component.html -->
+<form
+	(ngSubmit)="onLogin()"
+	#loginForm="ngForm"
+	class="p-4 grid gap-4 bg-gray-100"
+>
+	<label
+		>Email:
+		<input type="email" name="email" [(ngModel)]="email" required />
+	</label>
+	<label
+		>Password:
+		<input type="password" name="password" [(ngModel)]="password" required />
+	</label>
+	<button type="submit" class="bg-">Login</button>
+</form>
+<p *ngIf="errorMessage" class="text-red-600">{{ errorMessage }}</p>
